@@ -1,99 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>jetro</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="wrapper" style="background-image: url(images/bg.png);">
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <div class="header__logo">
-                    <a href="#">
-                        <img src="images/logos.png" alt="">
-                    </a>
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="images/logos.png" alt="">
+                        </a>
+                    </div>
+                    <nav class="header__menu">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li class="header__drop-down drop-down">
+                                <a href="#">Blog</a>
+                                <ul class="drop-down__list">
+                                    <li>
+                                        <a href="#">Oneone</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Twotwo</a>
+                                    </li>
+                                    <li class="drop-down__item drop_down">
+                                        <a href="#">Blogblog</a>
+                                        <ul class="drop-down__item-list">
+                                            <li>
+                                                <a href="#">Team blogs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">User blogs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">News blogs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Programm blogs</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Homehome</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Portfolio</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__drop-down drop-down">
+                                <a href="#">Portfolio</a>
+                                <ul class="drop-down__list">
+                                    <li>
+                                        <a href="#">Oneone</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Twotwo</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Contact US</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="header__menu">
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">About Us</a>
-                        </li>
-                        <li class="header__drop-down drop-down">
-                            <a href="#">Blog</a>
-                            <ul class="drop-down__list">
-                                <li>
-                                    <a href="#">Oneone</a>
-                                </li>
-                                <li>
-                                    <a href="#">Twotwo</a>
-                                </li>
-                                <li class="drop-down__item drop_down">
-                                    <a href="#">Blogblog</a>
-                                    <ul class="drop-down__item-list">
-                                        <li>
-                                            <a href="#">Team blogs</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">User blogs</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">News blogs</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Programm blogs</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Homehome</a>
-                                </li>
-                                <li>
-                                    <a href="#">Portfolio</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header__drop-down drop-down">
-                            <a href="#">Portfolio</a>
-                            <ul class="drop-down__list">
-                                <li>
-                                    <a href="#">Oneone</a>
-                                </li>
-                                <li>
-                                    <a href="#">Twotwo</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Contact US</a>
-                        </li>
-                    </ul>
-                </nav>
             </div>
-        </div>
-    </header>
-    <section class="slider">
-        <div class="container">
-            <div class="slider__inner"></div>
-        </div>
-    </section>
+        </header>
+        <section class="slider">
+            <div class="container">
+                <div class="slider__for">
+                    <div class="slider__for-item" style="background-image: url(images/slider/slider-for.png);">
+                        <div class="item-box">
+                            <div class="item-box__title">Slide One</div>
+                            <div class="item-box__text">Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea. </div>
+                        </div>
+                    </div>
+                    <div class="slider__for-item" style="background-image: url(images/slider/slider-for.png);">
+                        <div class="item-box">
+                            <div class="item-box__title">Slide One</div>
+                            <div class="item-box__text">Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea. </div>
+                        </div>
+                    </div>
+                    <div class="slider__for-item" style="background-image: url(images/slider/slider-for.png);">
+                        <div class="item-box">
+                            <div class="item-box__title">Slide One</div>
+                            <div class="item-box__text">Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea. </div>
+                        </div>
+                    </div>
+                    <div class="slider__for-item" style="background-image: url(images/slider/slider-for.png);">
+                        <div class="item-box">
+                            <div class="item-box__title">Slide One</div>
+                            <div class="item-box__text">Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea. </div>
+                        </div>
+                    </div>
+                    <div class="slider__for-item" style="background-image: url(images/slider/slider-for.png);">
+                        <div class="item-box">
+                            <div class="item-box__title">Slide One</div>
+                            <div class="item-box__text">Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea. </div>
+                        </div>
+                    </div>
+                    <div class="slider__for-item" style="background-image: url(images/slider/slider-for.png);">
+                        <div class="item-box">
+                            <div class="item-box__title">Slide One</div>
+                            <div class="item-box__text">Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea. </div>
+                        </div>
+                    </div>
+                    <div class="slider__for-item" style="background-image: url(images/slider/slider-for.png);">
+                        <div class="item-box">
+                            <div class="item-box__title">Slide One</div>
+                            <div class="item-box__text">Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea. </div>
+                        </div>
+                    </div>
+                    <div class="slider__for-item" style="background-image: url(images/slider/slider-for.png);">
+                        <div class="item-box">
+                            <div class="item-box__title">Slide One</div>
+                            <div class="item-box__text">Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea. </div>
+                        </div>
+                    </div>
+                    <div class="slider__for-item" style="background-image: url(images/slider/slider-for.png);">
+                        <div class="item-box">
+                            <div class="item-box__title">Slide One</div>
+                            <div class="item-box__text">Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea. </div>
+                        </div>
+                    </div>
+                    <div class="slider__for-item" style="background-image: url(images/slider/slider-for.png);">
+                        <div class="item-box">
+                            <div class="item-box__title">Slide One</div>
+                            <div class="item-box__text">Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea. </div>
+                        </div>
+                    </div>
+                    <div class="slider__for-item" style="background-image: url(images/slider/slider-for.png);">
+                        <div class="item-box">
+                            <div class="item-box__title">Slide One</div>
+                            <div class="item-box__text">Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea. </div>
+                        </div>
+                    </div>
+                    <div class="slider__for-item" style="background-image: url(images/slider/slider-for.png);">
+                        <div class="item-box">
+                            <div class="item-box__title">Slide One</div>
+                            <div class="item-box__text">Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea. </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__nav">
+                    <div class="slider__nav-item">
+                        <img src="images/slider/slider-nav1.png" alt="">
+                    </div>
+                    <div class="slider__nav-item">
+                        <img src="images/slider/slider-nav2.png" alt="">
+                    </div>
+                    <div class="slider__nav-item">
+                        <img src="images/slider/slider-nav3.png" alt="">
+                    </div>
+                    <div class="slider__nav-item">
+                        <img src="images/slider/slider-nav4.png" alt="">
+                    </div>
+                    <div class="slider__nav-item">
+                        <img src="images/slider/slider-nav5.png" alt="">
+                    </div>
+                    <div class="slider__nav-item">
+                        <img src="images/slider/slider-nav6.png" alt="">
+                    </div>
+                    <div class="slider__nav-item">
+                        <img src="images/slider/slider-nav1.png" alt="">
+                    </div>
+                    <div class="slider__nav-item">
+                        <img src="images/slider/slider-nav2.png" alt="">
+                    </div>
+                    <div class="slider__nav-item">
+                        <img src="images/slider/slider-nav3.png" alt="">
+                    </div>
+                    <div class="slider__nav-item">
+                        <img src="images/slider/slider-nav4.png" alt="">
+                    </div>
+
+                    <div class="slider__nav-item">
+                        <img src="images/slider/slider-nav5.png" alt="">
+                    </div>
+                    <div class="slider__nav-item">
+                        <img src="images/slider/slider-nav.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="desc">
+            <div class="container">
+                <div class="desc__inner">
+                    <div class="desc__item">
+                        <div class="desc__item-title">Check out my latest portfolio items</div>
+                        <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum
+                            iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.</p>
+                        <div class="desc__iten-link">
+                            <a href="">More</a>
+                        </div>
+                    </div>
+                    <div class="desc__item">
+                        <div class="desc__item-title title-two">Offer Top Notch Quality Work & Services</div>
+                        <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum
+                            iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.</p>
+                        <div class="desc__iten-link">
+                            <a href="">More</a>
+                        </div>
+                    </div>
+                    <div class="desc__item">
+                        <div class="desc__item-title title-three">Follow Me on Twitter, Facebook & Pinterest</div>
+                        <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum
+                            iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.</p>
+                        <div class="desc__iten-link">
+                            <a href="">More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="works">
+            <div class="container">
+                <div class="works__inner">
+                    <div class="works__inner-title">Recent Works</div>
+                    <div class="works__inner-info">
+                        <div class="info-box__content">
+                            <div class="info-box">
+                                <img src="images/works1.jpg" alt="">
+                                <div class="info-box__descr">
+                                    <div class="info-box__title">Character Design</div>
+                                    <div class="info-box__date">June 15, 2012</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-box__content">
+                            <div class="info-box">
+                                <img src="images/works2.jpg" alt="">
+                                <div class="info-box__descr">
+                                    <div class="info-box__title">Character Design</div>
+                                    <div class="info-box__date">June 15, 2012</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-box__content">
+                            <div class="info-box">
+                                <img src="images/works3.jpg" alt="">
+                                <div class="info-box__descr">
+                                    <div class="info-box__title">Character Design</div>
+                                    <div class="info-box__date">June 15, 2012</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-box__content">
+                            <div class="info-box">
+                                <img src="images/works4.jpg" alt="">
+                                <div class="info-box__descr">
+                                    <div class="info-box__title">Character Design</div>
+                                    <div class="info-box__date">June 15, 2012</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="container">
+                    <div class="footer__content">
+                        <div class="footer__item item-about">
+                            <div class="footer__item-title">About Jetro</div>
+                            <p>Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea. Id mei vitae denique, in eam commodo veritus disputando.</p>
+                            <p>Pro et erant delicata, eu vim essent imperdiet accommodare, dictas deseruisse ius an. Solet everti definitionem id ius, sonet oporteat cu vim.</p>
+                        </div>
+                        <div class="footer__item item-widget">
+                            <div class="footer__item-title">Twitter Widget</div>
+                            <div class="footer__item-box">
+                                <div class="box_title">
+                                    <span>
+                                        <a href="">@pixelmater</a>
+                                    </span> What an awesome design with great functionality :)
+                                </div>
+                                <div class="box-subtitle">
+                                    about 1 hour ago
+                                </div>
+                            </div>
+                            <div class="footer__item-box">
+                                <div class="box_title">
+                                    <span>
+                                        <a href="">@pixelmater</a>
+                                    </span> What an awesome design with great functionality :)
+                                </div>
+                                <div class="box-subtitle">about 1 hour ago</div>
+                            </div>
+                            <div class="footer__item-link">
+                                Follow
+                                <span>
+                                    <a href="">@bestpsdfreebies</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="footer__item-contacts">
+                            <div class="footer__item-title">Contact Us</div>
+                            <p>Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri.</p>
+                            <div class="footer__item-post">
+                                <a href="mail:information@jetro.com">information@jetro.com</a>
+                            </div>
+                            <span>1.222.333.4444</span>
+                            <div class="footer__item-social">
+                                <a href="#">
+                                    <img src="images/facebook.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="images/twitter.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="images/email.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="images/rss.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="images//vimeo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
 
 
-
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

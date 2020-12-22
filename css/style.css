@@ -1,69 +1,106 @@
-html{
+@font-face {
+    font-family: "bebas-neue-bold";
+    src: url("../fonts/bebas-neue-bold.ttf") format("ttf"), url("../fonts/BebasNeueBold.woff") format("woff"), url("../fonts/bebas-neue-bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("../fonts/ofont.ru_Bebas Neue.ttf") format("ttf"), url("../fonts/BebasNeueRegular.woff") format("woff"), url("../fonts/ofont.ru_Bebas Neue.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+
+html {
     box-sizing: border-box;
 }
+
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: inherit;
 }
+
 ul,
-li{
+li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-li{
+
+li {
     display: inline-block;
 }
-a{
+
+a {
     text-decoration: none;
     display: inline-block;
 }
-.wrapper{
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.container{
+
+.container {
     max-width: 970px;
     padding: 0 15px;
     margin: 0 auto;
 }
-body{
-    font-family: Helvetica, sans-serif;
+
+body {
+    /* font-family: Helvetica, sans-serif; */
     font-weight: 400;
+    font-family: "bebas-neue-bold";
 }
-.header__inner{
+
+.header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 78px;
 }
-.header__menu li + li{
+
+.header__menu li+li {
     margin-left: 25px;
 }
-.header__menu a{
+
+.header__menu a {
     font-size: 16px;
     text-transform: uppercase;
     color: #b9b9b9;
     transition: all .5s;
+    letter-spacing: 0.7px;
 }
-.header__menu a:hover{ 
+
+.header__menu a:hover {
     color: #e8663c;
 }
-.header__drop-down{
+
+.header__drop-down {
     position: relative;
+    z-index: 99;
 }
-.header__drop-down > a{
+
+.header__drop-down>a {
     position: relative;
     padding: 10px 10px 10px 5px;
     border-left: 2px solid transparent;
 }
+
 .header__drop-down.drop-down {
     margin-left: 20px;
 }
-.drop-down__list{
-    display: none;   
+
+.drop-down__list {
+    display: none;
     position: absolute;
     width: 200px;
     background-color: #ffffff;
@@ -71,33 +108,39 @@ body{
     padding-left: 10px;
     border-left: 2px solid #b9b9b9;
 }
-.drop-down__list li{
+
+.drop-down__list li {
     display: block;
     padding: 12px 0;
     border-bottom: 2px solid transparent;
-    transition:  all .3s;
+    transition: all .3s;
 }
-.drop-down__list li:hover{
+
+.drop-down__list li:hover {
     border-bottom: 2px solid #b9b9b9;
 }
-.drop-down__list li + li{
+
+.drop-down__list li+li {
     margin-left: 0;
 }
-.drop-down__list a{
+
+.drop-down__list a {
     text-transform: none;
 }
 
-.header__drop-down.drop-down:hover .drop-down__list{
+.header__drop-down.drop-down:hover .drop-down__list {
     display: block;
 }
-.header__drop-down.drop-down:hover > a{
+
+.header__drop-down.drop-down:hover>a {
     border-left: 2px solid #b9b9b9;
 }
 
 .drop-down__item.drop_down {
     position: relative;
 }
-.drop-down__item-list{
+
+.drop-down__item-list {
     display: none;
     position: absolute;
     width: 150px;
@@ -107,17 +150,294 @@ body{
     border-left: 2px solid #b9b9b9;
     padding: 0 10px;
 }
+
 .drop-down__item-list li {
     padding: 12px 0;
     border-bottom: none;
 }
-.drop-down__item-list li:hover{
+
+.drop-down__item-list li:hover {
     border-bottom: transparent;
 }
+
 .drop-down__item-list li a {
     font-size: 16px;
 }
-.drop-down__item.drop_down:hover .drop-down__item-list{
+
+.drop-down__item.drop_down:hover .drop-down__item-list {
     transition: all .5s;
     display: block;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: #f3af9d;
+}
+
+.slider::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    top: 0;
+    right: 0;
+    background-color: #f3af9d;
+}
+
+.slider__for-item {
+    position: relative;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider__nav {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 15px;
+}
+
+.slider__nav-item {
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.slick-arrow:before {
+    content: '';
+}
+
+.slick-arrow {
+    position: absolute;
+    z-index: 3;
+    border: none;
+    background-color: transparent;
+    top: 50%;
+    transform: translate(0, -50%);
+    outline: none;
+    cursor: pointer;
+}
+
+.prev-arrow {
+    left: 25px;
+}
+
+.next-arrow {
+    right: 25px;
+}
+
+.item-box {
+    position: absolute;
+    max-width: 410px;
+    bottom: 30px;
+    left: 30px;
+    padding: 20px;
+    color: #ffffff;
+    background-color: rgba(232, 102, 60, .8);
+}
+
+.item-box__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.item-box__text {
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+}
+
+.desc {
+    margin: 35px 0 40px 0;
+}
+
+.desc__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc__item {
+    max-width: 280px;
+}
+
+.desc__item-title {
+    position: relative;
+    color: #e8663c;
+    font-size: 22px;
+    line-height: 24px;
+    padding-left: 70px;
+    margin-bottom: 30px;
+}
+
+.desc__item-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 47px;
+    height: 47px;
+    background-image: url(../images/desc1.svg);
+}
+
+.title-two::before {
+    background-image: url(../images/desc2.svg);
+    width: 49px;
+    height: 41px;
+}
+
+.title-three::before {
+    background-image: url(../images/desc3.svg);
+    height: 40px;
+    width: 40px;
+}
+
+.desc__item p {
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+    color: #414141;
+    line-height: 18px;
+    margin-bottom: 40px;
+}
+
+.desc__iten-link a {
+    font-size: 14px;
+    color: #ffffff;
+    padding: 11px 16px;
+    background-color: #e8663c;
+    font-family: "Bebas Neue";
+    letter-spacing: 0.5px;
+}
+
+.works__inner {
+    padding-bottom: 50px;
+}
+
+.works__inner-title {
+    position: relative;
+    padding-right: 30px;
+    font-size: 20px;
+    color: #e8603c;
+    margin-bottom: 20px;
+}
+
+.works__inner-title::before {
+    content: '';
+    position: absolute;
+    width: 808px;
+    height: 18px;
+    background-image: url(../images/line.jpg);
+    right: 0;
+}
+
+.works__inner-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-box {
+    overflow: hidden;
+    min-height: 244px;
+    position: relative;
+}
+
+.info-box__descr {
+    position: absolute;
+    border: 1px solid #dbdbdb;
+    padding: 11px;
+    width: 100%;
+    background-color: #ffffff;
+    bottom: 0;
+    border-top: transparent;
+}
+
+.info-box__title {
+    font-size: 18px;
+    color: #b9b9b9;
+}
+
+.info-box__date {
+    font-size: 12px;
+    color: #e8603c;
+    line-height: 18px;
+    font-family: "Bebas Neue";
+}
+
+.footer__inner {
+    position: relative;
+}
+
+.footer__inner::before {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 100%;
+    background-color: #f2b19c;
+    left: 9;
+    top: 0;
+}
+
+.footer__inner::after {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 100%;
+    background-color: #f2b19c;
+    right: 0;
+    top: 0;
+}
+
+.footer__content {
+    background-color: #e8663c;
+    color: #ffffff;
+    font-family: Helvetica, sans-serif;
+    padding: 40px 40px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-about {
+    max-width: 265px;
+}
+
+.item-about p {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.item-about p:last-child {
+    margin-bottom: 0;
+}
+
+.footer__item-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+    font-family: "bebas-neue-bold";
+}
+
+.box_title {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 12px;
+}
+
+.box_title a {
+    color: #f3b29d;
+}
+
+.box-subtitle {
+    font-size: 12px;
+    color: #f3b29d;
+    margin-bottom: 20px;
+    line-height: 14px;
+}
+
+.footer__item-contacts {
+    max-width: 260px;
 }
