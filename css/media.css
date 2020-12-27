@@ -1,0 +1,124 @@
+@media(max-width: 1390px) {
+    .footer__inner::before,
+    .footer__inner::after {
+        width: 100px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .slider::before,
+    .slider::after {
+        width: 100px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .slider::before,
+    .slider::after {
+        display: none;
+    }
+    .footer__inner::before,
+    .footer__inner::after {
+        display: none;
+    }
+}
+
+@media(max-width: 940px) {
+    .works__inner-title::before {
+        display: none;
+    }
+    .works__inner-info {
+        flex-wrap: wrap;
+    }
+    .info-box__content {
+        width: 50%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 870px) {
+    .desc__inner {
+        flex-wrap: wrap;
+    }
+    .desc__item {
+        max-width: none;
+        width: 50%;
+        padding: 0 10px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .menu__btn {
+        display: block;
+    }
+    .header__menu ul {
+        display: none;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        left: 0;
+        text-align: center;
+        top: 74px;
+        background-color: #ffffff;
+    }
+    .header__menu li {
+        display: block;
+        padding: 10px 0;
+    }
+    .header__menu li+li {
+        margin-left: 0;
+    }
+    /* .slick-slide img {
+        width: 120px;
+    } */
+    .footer__content {
+        flex-wrap: wrap;
+    }
+    .content-box {
+        width: 50%;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 660px) {
+    .slider__nav {
+        margin-left: 0;
+    }
+    .item-box {
+        max-width: 300px;
+        padding: 10px;
+    }
+    .item-box__title {
+        margin-bottom: 10px;
+    }
+    .slick-arrow {
+        display: none !important;
+    }
+}
+
+@media (max-width: 570px) {
+    .desc__item {
+        width: 100%;
+    }
+    .content-box {
+        width: 100%;
+    }
+    .footer__content-about,
+    .footer__content-contact {
+        max-width: none;
+    }
+}
+
+@media(max-width: 500px) {
+    .info-box__content {
+        width: 100%;
+    }
+}
+
+@media(max-width: 420px) {
+    .item-box {
+        max-width: 200px;
+        right: 10px;
+    }
+}
